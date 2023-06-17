@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Lora', serif;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jami {
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 900px;
+    justify-content: center;
+    text-align: center;
+}
+
+.jami section {
+    display: inline-block;
+}
+
+.player {
+    background-color: #fa9191;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+    justify-content: center;
+    text-align: center;
+    flex: 50%;
+}
+
+.player--active {
+    background-color: rgb(136, 132, 132);
+}
+
+.player--active .current {
+    opacity: 1;
+}
+
+.btn {
+    left: 50%;
+    color: #444;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+}
+
+.player--0 {
+    height: 400px;
+    width: 400px;
+    margin-right: -15px;
+    border-radius: 5px;
+}
+
+.player--1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.player--WINNER {
+    background-color: rgb(14, 14, 16);
+}
+
+.player--WINNER .name {
+    color: rgb(249, 4, 217);
+    font-weight: 700;
+}
+
+.current {
+    background-color: rgb(225, 78, 78);
+    margin: 30px 130px;
+    margin-top: 110px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.score{
+    font-size: 50px;
+    margin-top: -15px;
+    color: red;
+}
+
+.current-score {
+    color: aliceblue;
+    font-size: 28px;
+    margin-top: -10px;
+}
+
+.name {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 7px 10px;
+    width: 120px;
+    border: 1px solid rgb(159, 154, 154);
+}
+
+.bnt--new {
+    margin-top: -370px;
+}
+
+.bnt--roll {
+    margin-top: 202px;
+}
+
+.bnt--hold {
+    margin-top: 15px;
+    width: 90px;
+}
+
+.dice {
+    position: absolute;
+}
